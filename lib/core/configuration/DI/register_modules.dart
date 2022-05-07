@@ -5,6 +5,7 @@ import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:logger/logger.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+//all the module or sdk will initialize here.
 @module
 abstract class InjectionModule {
 //injecting third party libraries

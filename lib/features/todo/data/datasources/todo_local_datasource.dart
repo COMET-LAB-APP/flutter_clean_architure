@@ -7,6 +7,11 @@ import 'package:flutter_clean_architure/features/todo/data/model/todo_model.dart
 import 'package:injectable/injectable.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+/*
+Local datasource is the layer for getting data from cached like share preference, local database, etc...
+and it's also get error data when data to convert is invalid and also when local database has something wrong.
+*/
+
 abstract class TodoLocalDatasource {
   List<TodoModel> getTodoLocal();
   Future<bool> saveTodo(List<TodoModel> data);

@@ -8,6 +8,11 @@ import 'package:flutter_clean_architure/features/todo/domain/entity/todo.dart';
 import 'package:flutter_clean_architure/features/todo/domain/repositories/todo_repository.dart';
 import 'package:injectable/injectable.dart';
 
+/*
+Repo Implement is the layer for gathering the datasource and other third party in order to make a complete flow.
+Note: this layer you can return only entity or you can return either which will help us to handle the error.
+*/
+
 @LazySingleton(as: TodoRepository)
 class TodoRepositoryImpl extends TodoRepository {
   final NetworkInfo networkInfo;

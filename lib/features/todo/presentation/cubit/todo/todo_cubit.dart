@@ -9,6 +9,11 @@ import 'package:injectable/injectable.dart';
 part 'todo_state.dart';
 part 'todo_cubit.freezed.dart';
 
+/*
+Bloc is a package for handling state in flutter.
+Note: in bloc we will inject only usecases and converter class.
+*/
+
 @injectable
 class TodoCubit extends Cubit<TodoState> {
   final GetTodo getTodo;

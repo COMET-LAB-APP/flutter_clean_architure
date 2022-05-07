@@ -6,6 +6,10 @@ import 'package:flutter_clean_architure/features/todo/domain/entity/todo.dart';
 import 'package:flutter_clean_architure/features/todo/domain/repositories/todo_repository.dart';
 import 'package:injectable/injectable.dart';
 
+/*
+Usecase will get a method of repo to create case by case 
+*/
+
 @lazySingleton
 class GetTodo implements UseCase<List<Todo>, NoParams> {
   final TodoRepository homeRepository;

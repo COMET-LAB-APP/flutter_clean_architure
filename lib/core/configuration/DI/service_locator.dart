@@ -6,6 +6,7 @@ import 'package:injectable/injectable.dart';
 
 final getIt = GetIt.instance;
 
+//This path is registering of services and also the modules
 @injectableInit
 Future<void> configureDependencies() async {
   WidgetsFlutterBinding.ensureInitialized();
